@@ -1,2 +1,10 @@
-var name = 'serhii';
-console.log('hey nodejs it is ' + name);
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Message on page ');
+});
+
+app.listen(3000, function () {
+console.log('Server is running...');
+});
